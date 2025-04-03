@@ -1,0 +1,127 @@
+/* Reset some default styles */
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+input{
+    width: 400px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 50px;
+    /* border: 2px solid black; */
+    padding-left: 20px;
+}
+
+.edit-input{
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 50px;
+    /* border: 2px solid black; */
+    padding-left: 20px;
+}
+input:hover{
+    box-shadow:2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition:box-shadow 0.3s ease-in-out;
+}
+/* Center everything properly */
+h1{
+    text-align: center;
+    margin-top: 1rem;
+    color: crimson;
+}
+/* Input Section */
+.input-section{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+
+}
+/* Task List Container */
+.task-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color:rgb(147, 119, 189); */
+    padding: 2rem;
+    margin-top: 1rem;
+    /* border-radius: 10px; */
+}
+/* Task List */
+.task-list{
+    list-style-type: none;
+    padding: 0;
+    /* width: 300px; */
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    
+}
+
+/* Individual Task Item */
+.task-container div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
+.done-btn, .delete-btn,.undone-btn,.edit-btn,.save_btn{
+    margin-left: 0.5rem;
+    padding: 0.3rem 0.6rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#input-task{
+    margin-left: 0.5rem;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: rgb(50, 146, 50);
+    color: white;
+    font-weight: 5200;
+}
+
+.done-btn,.undone-btn {
+    background-color: green;
+    color: white;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+}
+
+.edit-btn,.save_btn{
+    color: white;
+    background-color: grey;
+}
+/* Completed Task */
+.completed span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+h2{
+    color:darkblue;
+}
+
+.list-item{
+    display: flex;
+    justify-content: row;
+}
+
+
+.list-item:hover{
+    box-shadow:2px 2px 9px rgba(0, 0, 0, 0.5);
+    transition:box-shadow 0.3s ease-in-out;
+}
